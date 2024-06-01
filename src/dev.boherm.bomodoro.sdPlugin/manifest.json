@@ -1,0 +1,80 @@
+{
+	"SDKVersion": 2,
+	"Author": "boherm",
+	"CodePath": "app.html",
+	"Description": "Pomodoro timer",
+	"Name": "Bo'modoro",
+	"Version": "1.0.0",
+	"Software": {
+		"MinimumVersion": "5.0"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.11"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Category": "Bo'modoro",
+	"CategoryIcon": "assets/boherm",
+	"Actions": [
+		{
+			"UUID": "dev.boherm.bomodoro.clock",
+			"Icon": "assets/clock",
+			"Name": "Clock",
+			"States": [
+				{
+					"Image": "assets/clock"
+				}
+			],
+			"UserTitleEnabled": false,
+			"DisableAutomaticStates": true,
+			"SupportedInMultiActions": false,
+			"PropertyInspectorPath": "actions/property-inspector/clock.html"
+		},
+		{
+			"UUID": "dev.boherm.bomodoro.timer",
+			"Icon": "assets/timer",
+			"Name": "Pomodoro Timer",
+			"States": [
+				{
+					"Image": "assets/timer"
+				}
+			],
+			"UserTitleEnabled": false,
+			"DisableAutomaticStates": true,
+			"SupportedInMultiActions": false,
+			"PropertyInspectorPath": "actions/property-inspector/timer.html"
+		},
+		{
+			"UUID": "dev.boherm.bomodoro.inMeetingToggle",
+			"Icon": "assets/meeting",
+			"Name": "In Meeting toggle",
+			"States": [
+				{
+					"Image": "assets/meeting"
+				}
+			],
+			"UserTitleEnabled": false,
+			"DisableAutomaticStates": true,
+			"SupportedInMultiActions": false
+		},
+		{
+			"UUID": "dev.boherm.bomodoro.statistics",
+			"Icon": "assets/statistics",
+			"Name": "Statistics",
+			"States": [
+				{
+					"Image": "assets/statistics"
+				}
+			],
+			"UserTitleEnabled": false,
+			"DisableAutomaticStates": true,
+			"SupportedInMultiActions": false,
+			"PropertyInspectorPath": "actions/property-inspector/stats.html"
+		}
+	]
+}

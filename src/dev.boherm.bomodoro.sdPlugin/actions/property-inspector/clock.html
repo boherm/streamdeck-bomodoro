@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>dev.boherm.bomodoro Property Inspector</title>
+    <link rel="stylesheet" href="../../libs/css/sdpi.css" />
+</head>
+
+<body>
+<div class="sdpi-wrapper">
+    <div type="tabs" class="sdpi-item">
+        <div class="sdpi-item-label empty"></div>
+        <div class="tabs">
+            <div class="tab selected" data-target="#monday" title="Durations" data-localize>Monday</div>
+            <div class="tab" data-target="#tuesday" title="Show Phillips Hue settings" data-localize>Tuesday</div>
+            <div class="tab" data-target="#wednesday" title="Show Phillips Hue settings" data-localize>Wednesday</div>
+            <div class="tab" data-target="#thursday" title="Show Phillips Hue settings" data-localize>Thursday</div>
+            <div class="tab" data-target="#friday" title="Show Phillips Hue settings" data-localize>Friday</div>
+            <div class="tab" data-target="#saturday" title="Show Phillips Hue settings" data-localize>Saturday</div>
+            <div class="tab" data-target="#sunday" title="Show Phillips Hue settings" data-localize>Sunday</div>
+        </div>
+    </div>
+    <hr class="tab-separator">
+    <form id="form-clock">
+        <div id="monday" class="tab-container">
+            <div data-localize class="sdpi-heading">Morning</div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="Start">Start</div>
+                <input data-localize name="morning[1][start]" type="time" />
+            </div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="End">End</div>
+                <input data-localize name="morning[1][end]" type="time" />
+            </div>
+            <div data-localize class="sdpi-heading">Afternoon</div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="Start">Start</div>
+                <input data-localize name="afternoon[1][start]" type="time" />
+            </div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="End">End</div>
+                <input data-localize name="afternoon[1][end]" type="time" />
+            </div>
+        </div>
+        <div id="tuesday" class="tab-container">
+            <div data-localize class="sdpi-heading">Morning</div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="Start">Start</div>
+                <input data-localize name="morning[2][start]" type="time" />
+            </div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="End">End</div>
+                <input data-localize name="morning[2][end]" type="time" />
+            </div>
+            <div data-localize class="sdpi-heading">Afternoon</div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="Start">Start</div>
+                <input data-localize name="afternoon[2][start]" type="time" />
+            </div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="End">End</div>
+                <input data-localize name="afternoon[2][end]" type="time" />
+            </div>
+        </div>
+        <div id="wednesday" class="tab-container">
+            <div data-localize class="sdpi-heading">Morning</div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="Start">Start</div>
+                <input data-localize name="morning[3][start]" type="time" />
+            </div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="End">End</div>
+                <input data-localize name="morning[3][end]" type="time" />
+            </div>
+            <div data-localize class="sdpi-heading">Afternoon</div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="Start">Start</div>
+                <input data-localize name="afternoon[3][start]" type="time" />
+            </div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="End">End</div>
+                <input data-localize name="afternoon[3][end]" type="time" />
+            </div>
+        </div>
+        <div id="thursday" class="tab-container">
+            <div data-localize class="sdpi-heading">Morning</div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="Start">Start</div>
+                <input data-localize name="morning[4][start]" type="time" />
+            </div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="End">End</div>
+                <input data-localize name="morning[4][end]" type="time" />
+            </div>
+            <div data-localize class="sdpi-heading">Afternoon</div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="Start">Start</div>
+                <input data-localize name="afternoon[4][start]" type="time" />
+            </div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="End">End</div>
+                <input data-localize name="afternoon[4][end]" type="time" />
+            </div>
+        </div>
+        <div id="friday" class="tab-container">
+            <div data-localize class="sdpi-heading">Morning</div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="Start">Start</div>
+                <input data-localize name="morning[5][start]" type="time" />
+            </div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="End">End</div>
+                <input data-localize name="morning[5][end]" type="time" />
+            </div>
+            <div data-localize class="sdpi-heading">Afternoon</div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="Start">Start</div>
+                <input data-localize name="afternoon[5][start]" type="time" />
+            </div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="End">End</div>
+                <input data-localize name="afternoon[5][end]" type="time" />
+            </div>
+        </div>
+        <div id="saturday" class="tab-container">
+            <div data-localize class="sdpi-heading">Morning</div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="Start">Start</div>
+                <input data-localize name="morning[6][start]" type="time" />
+            </div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="End">End</div>
+                <input data-localize name="morning[6][end]" type="time" />
+            </div>
+            <div data-localize class="sdpi-heading">Afternoon</div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="Start">Start</div>
+                <input data-localize name="afternoon[6][start]" type="time" />
+            </div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="End">End</div>
+                <input data-localize name="afternoon[6][end]" type="time" />
+            </div>
+        </div>
+        <div id="sunday" class="tab-container">
+            <div data-localize class="sdpi-heading">Morning</div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="Start">Start</div>
+                <input data-localize name="morning[0][start]" type="time" />
+            </div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="End">End</div>
+                <input data-localize name="morning[0][end]" type="time" />
+            </div>
+            <div data-localize class="sdpi-heading">Afternoon</div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="Start">Start</div>
+                <input data-localize name="afternoon[0][start]" type="time" />
+            </div>
+            <div class="sdpi-item">
+                <div data-localize class="sdpi-item-label" title="End">End</div>
+                <input data-localize name="afternoon[0][end]" type="time" />
+            </div>
+        </div>
+        <div class="sdpi-item"></div>
+        <div class="sdpi-item">
+            <div class="sdpi-item-label empty"></div>
+            <button
+                    type="submit"
+                    class="sdpi-item-value"
+                    value="Save configuration"
+                    data-localize>
+                Save configuration
+            </button>
+        </div>
+    </form>
+</div>
+
+<div class="sdpi-info-label hidden" style="top: -1000" value=""></div>
+
+<!-- Stream Deck Libs -->
+<script src="../../libs/js/constants.js"></script>
+<script src="../../libs/js/prototypes.js"></script>
+<script src="../../libs/js/timers.js"></script>
+<script src="../../libs/js/utils.js"></script>
+<script src="../../libs/js/events.js"></script>
+<script src="../../libs/js/api.js"></script>
+<script src="../../libs/js/property-inspector.js"></script>
+<script src="../../libs/js/dynamic-styles.js"></script>
+<script src="../../libs/js/action.js"></script>
+
+<!-- Property Inspector Source -->
+<script src="../constants.js"></script>
+<script src="clock.js"></script>
+</body>
+
+</html>

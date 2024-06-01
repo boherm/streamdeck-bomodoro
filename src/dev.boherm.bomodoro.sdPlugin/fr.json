@@ -1,0 +1,22 @@
+{
+  "Description": "Use this to create your own plugin", 
+  "Name": "Stream Deck Template", 
+  "Category": "Templates", 
+  "com.elgato.template.action": {
+    "Name": "Action", 
+    "Tooltip": "This is the only action in this plugin"
+  },
+  "Localization": {
+    "More info": "Plus d'info",
+    "Message": "Message",
+    "Click Me": "Cliquez-moi",
+    "Button": "Bouton",
+    "More": "Plus",
+    "My name": "Mon nom",
+    "My title": "Mon titre",
+    "My message": "Mon message",
+    "My button": "Mon bouton",
+    "Inputs": "Entrées",
+    "Text": "Texte"
+  }
+}

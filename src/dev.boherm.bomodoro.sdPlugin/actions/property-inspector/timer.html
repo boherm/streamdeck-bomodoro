@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>dev.boherm.bomodoro Property Inspector</title>
+    <link rel="stylesheet" href="../../libs/css/sdpi.css" />
+</head>
+
+<body>
+    <div class="sdpi-wrapper">
+        <div type="tabs" class="sdpi-item">
+            <div class="sdpi-item-label empty"></div>
+            <div class="tabs">
+                <div class="tab selected" data-target="#tab1" title="Durations" data-localize>Durations</div>
+                <div class="tab" data-target="#tab2" title="Show Phillips Hue settings" data-localize>Phillips Hue</div>
+            </div>
+        </div>
+        <hr class="tab-separator">
+        <div id="tab1" class="tab-container">
+            <form id="form-durations">
+                <div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label" title="Work">Work</div>
+                    <input data-localize class="sdpi-item-value" name="work" type="number" pattern="[0-9]+" value="" placeholder="25" />
+                </div>
+                <div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label" title="Short Break">Short break</div>
+                    <input data-localize class="sdpi-item-value" name="short" type="number" pattern="[0-9]+" value="" placeholder="5" />
+                </div>
+                <div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label" title="Long break">Long break</div>
+                    <input data-localize class="sdpi-item-value" name="long" type="number" pattern="[0-9]+" value="" placeholder="15" />
+                </div>
+                <div class="sdpi-item">
+                    <div class="sdpi-item-label empty"></div>
+                    <button
+                            type="submit"
+                            class="sdpi-item-value"
+                            value="Save configuration"
+                            data-localize>
+                        Save configuration
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div id="tab2" class="tab-container">
+            <form id="form-hue">
+                <div type="radio" class="sdpi-item" id="active">
+                    <div data-localize class="sdpi-item-label">Active</div>
+                    <div class="sdpi-item-value">
+                        <span class="sdpi-item-child">
+                            <input id="active1" type="radio" name="active">
+                            <label for="active1" class="sdpi-item-label"><span></span>on</label>
+                        </span>
+                        <span class="sdpi-item-child">
+                            <input id="active2" type="radio" value="off" name="active">
+                            <label for="active2" class="sdpi-item-label"><span></span>off</label>
+                        </span>
+                    </div>
+                </div>
+                <div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label" title="Bridge IP">Bridge IP</div>
+                    <input class="sdpi-item-value" name="bridgeHost" type="text" value="" placeholder="0.0.0.0:443" />
+                </div>
+                <div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label" title="Bridge Username">Bridge Username</div>
+                    <input class="sdpi-item-value" name="bridgeUsername" type="password" value="" placeholder="" />
+                </div>
+                <div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label" title="Room ID">Room ID</div>
+                    <input class="sdpi-item-value" name="idRoom" type="number" value="" />
+                </div>
+                <div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label" title="Scene Available ID">Scene Available ID</div>
+                    <input class="sdpi-item-value" name="idSceneAvailable" type="text" value="" />
+                </div>
+                <div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label" title="Scene Busy ID">Scene Busy ID</div>
+                    <input class="sdpi-item-value" name="idSceneBusy" type="text" value="" />
+                </div>
+                <div class="sdpi-item">
+                    <div class="sdpi-item-label empty"></div>
+                    <button
+                            type="submit"
+                            class="sdpi-item-value"
+                            value="Save configuration"
+                            data-localize>
+                        Save configuration
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="sdpi-info-label hidden" style="top: -1000" value=""></div>
+
+    <!-- Stream Deck Libs -->
+    <script src="../../libs/js/constants.js"></script>
+    <script src="../../libs/js/prototypes.js"></script>
+    <script src="../../libs/js/timers.js"></script>
+    <script src="../../libs/js/utils.js"></script>
+    <script src="../../libs/js/events.js"></script>
+    <script src="../../libs/js/api.js"></script>
+    <script src="../../libs/js/property-inspector.js"></script>
+    <script src="../../libs/js/dynamic-styles.js"></script>
+    <script src="../../libs/js/action.js"></script>
+
+    <!-- Property Inspector Source -->
+    <script src="../constants.js"></script>
+    <script src="timer.js"></script>
+</body>
+
+</html>
