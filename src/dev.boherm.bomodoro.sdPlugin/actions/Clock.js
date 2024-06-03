@@ -51,7 +51,10 @@ class Clock {
         let seconds = countdown - (minutes * 60) - (hours * 3600);
 
         if (hours > 0) {
-            return this._formatWithZero(hours) + ':' + this._formatWithZero(minutes + (seconds > 0 ? 1 : 0));
+            minutes += (seconds > 0 ? 1 : 0);
+            hours += (minutes > 59 ? 1 : 0);
+            minutes = (minutes > 59 ? 0 : minutes);
+            return this._formatWithZero(hours) + ':' + this._formatWithZero(minutes);
         }
 
         return this._formatWithZero(minutes) + ':' + this._formatWithZero(seconds);
